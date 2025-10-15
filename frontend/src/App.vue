@@ -1,0 +1,35 @@
+<template>
+  <div id="app">
+    <router-view />
+  </div>
+</template>
+
+<script setup lang="ts">
+import { onMounted } from 'vue'
+import { useUserStore } from '@/store/user'
+
+const userStore = useUserStore()
+
+onMounted(() => {
+  userStore.initUser()
+})
+</script>
+
+<style>
+#app {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+</style>
