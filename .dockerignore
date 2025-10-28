@@ -1,0 +1,41 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# IDE
+.idea
+.vscode
+*.iml
+
+# 日志
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.swp
+*~
+
+# 构建产物
+target/
+dist/
+build/
+node_modules/
+
+# 文档
+*.md
+docs/
+
+# 测试
+test/
+tests/
+*.test.js
+
+# 环境文件
+.env.local
+.env.development
+
+# 其他
+.DS_Store
+Thumbs.db
